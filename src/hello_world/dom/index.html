@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='UTF-8'>
+  <title>Hello JavaScript!</title>
+</head>
+<body>
+  <div id='main'>
+  </div>
+  <script>
+  var mainElement = document.getElementById('main');
+  for(var i=0; i<=10; i++) {
+    var newElement = document.createElement('p');
+    newElement.innerHTML = 'Hello, JavaScript';
+    mainElement.appendChild(newElement);
+  }
+  </script>
+</body>
+</html>
