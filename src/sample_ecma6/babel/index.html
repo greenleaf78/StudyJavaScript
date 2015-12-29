@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>SAMPLE</title>
+</head>
+<body>
+<div id="main"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+<script type="text/babel">
+// ECMAScript6 Sample Code
+class MySample {
+  constructor(name) {
+    this.name = name;
+  }
+  sayHello() {
+    console.log(this.name);
+  }
+}
+{
+  let sample1 = new MySample('Tom');
+  sample1.sayHello();
+}
+sample1.sayHello(); // -> Error (ReferenceError)
+</script>
+</body>
+</html>
