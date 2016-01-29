@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='UTF-8'>
+  <title>Hello JavaScript!</title>
+</head>
+<body>
+  <h1>Hoge JavaScript</h1>
+  <button id='ok_button'>押してね</button>
+  <div id ="main"></div>
+  <script>
+    var buttonElement = document.getElementById('ok_button');
+    buttonElement.onclick = (ev) =>{
+      console.log('押されたよ');
+    }
+  </script>
+  <script src="myscript.js">
+  </script>
+</body>
+</html>
