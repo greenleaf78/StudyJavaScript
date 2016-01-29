@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='UTF-8'>
+  <title>Hello JavaScript EventHandler</title>
+</head>
+<body>
+  <div id='main'>
+    <p id='count'>0</p>
+    <button id='ok_button'>OK</button>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+  <script type="text/babel">
+    const buttonElement = document.getElementById('ok_button');
+    const countElement = document.getElementById('count');
+
+    let count = 0;
+    buttonElement.onclick = (ev) => {
+      count++;
+      console.log('pushed');
+      console.log(count);
+      countElement.innerHTML = count;
+    };
+    countElement.onclick = (ev) => {
+      console.log(ev.target.innerHTML);
+    };
+  </script>
+</body>
+</html>
